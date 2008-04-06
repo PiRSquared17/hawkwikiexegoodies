@@ -1,0 +1,11 @@
+<html>
+<body>
+<p>Hello,<br/>
+somebody from <code>$HOSTNAME</code> (hopefully you) has requested a login link from HawkWikiEx 
+on <a href="$URL"><code>$URL</code></a>.<br>
+If it was intended, please click <a href="$LOGINLINK">here</a> and you will be logged in as <code>$USERNAME</code>.<br><br>
+
+Best, <br>
+--HawkWikiEx
+</body>
+</html>

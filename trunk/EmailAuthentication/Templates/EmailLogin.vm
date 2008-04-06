@@ -1,0 +1,42 @@
+#*
+ Copyright (c) 2008 David Podhola.
+*#
+
+<html><head><title>$PAGENAME</title></head>
+<body><h1>$PAGENAME</h1><hr/>
+
+<!-- START WIKI TEXT -->
+
+
+<div id="WikiText">
+
+$WIKITEXT
+
+</div>
+
+
+<!-- END WIKI TEXT -->
+
+#if( $SENTTOEMAIL == "" )
+<h2>Login information:</h2>
+
+<form>
+        <input type="hidden" id="login" name="login" />
+        <input type="text" id="Email" name="Email" />
+        <input type="submit" Text="Send email link" />
+</form>
+#else
+<p>Mail has been successfully sent to your email address. You may close this window when the mail arrives.
+</p>
+#end
+
+
+<div id="WikiEditBox">
+<a href='StartPage.wiki'>Return to StartPage</a>
+						<a href='$EDITLINK'>Edit</a>&nbsp;						
+
+</div>
+
+
+</body></html>
+
